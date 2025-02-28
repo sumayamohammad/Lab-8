@@ -77,16 +77,16 @@ body {
     transition: filter 0.3s ease-in-out;
 }
 
-.blur {
+.card.blur img {
     filter: blur(8px);
 }
 
-.invert {
+.card.invert img {
     filter: invert(100%);
 }
 
-.gradient img {
-    filter: brightness(40%) contrast(200%) saturate(150%);
+.card.gradient img {
+    filter: brightness(30%) contrast(250%) saturate(200%);
 }
 
 .caption {
@@ -96,25 +96,4 @@ body {
     transform: translate(-50%, -50%);
     background: rgba(0, 0, 0, 0.7);
     color: white;
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 1.2rem;
-    text-align: center;
-}
-
-.contact {
-    text-align: center;
-    padding: 20px;
-    background: linear-gradient(to right, white, green);
-    margin-top: 20px;
-}
-
-.contact a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
-
-.contact a:hover {
-    color: green;
-}
+    paddi
