@@ -24,8 +24,8 @@ body {
 }
 
 .profile-pic {
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     margin-left: 15px;
     border: 3px solid green;
@@ -34,21 +34,21 @@ body {
 .container {
     flex: 1;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    padding: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    padding: 25px;
     justify-items: center;
 }
 
 .card {
     position: relative;
-    width: 350px;
-    height: 400px;
+    width: 300px;
+    height: 350px;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease-in-out;
-    border: 5px solid transparent;
+    border: 4px solid transparent;
 }
 
 .card:hover {
@@ -80,15 +80,15 @@ body {
 }
 
 .card.blur img {
-    filter: blur(4px);
+    filter: blur(3px);
 }
 
 .card.invert img {
-    filter: invert(80%);
+    filter: invert(75%);
 }
 
 .card.gradient img {
-    filter: brightness(70%) contrast(140%) saturate(120%);
+    filter: brightness(75%) contrast(130%) saturate(115%);
 }
 
 .caption {
@@ -96,27 +96,27 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.6);
     color: white;
-    padding: 12px 15px;
+    padding: 10px 12px;
     border-radius: 5px;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     text-align: center;
     font-weight: bold;
     z-index: 5;
 }
 
 .card.gradient .caption {
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.85);
     color: black;
 }
 
 .contact {
     text-align: center;
-    padding: 20px;
+    padding: 15px;
     background: linear-gradient(to right, white, green);
-    margin-top: 20px;
-    font-size: 1.5rem;
+    margin-top: 15px;
+    font-size: 1.3rem;
     font-weight: bold;
     color: black;
 }
