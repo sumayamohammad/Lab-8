@@ -48,25 +48,9 @@ body {
     overflow: hidden;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease-in-out;
-    border: 4px solid transparent;
-}
-
-.card::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    padding: 5px;
     background: linear-gradient(to right, #009900, #ffffff, #009900);
-    opacity: 1;
-    z-index: -1;
-    border-radius: 10px;
-}
-
-.card:hover {
-    transform: scale(1.05);
-    border-color: #009900;
+    border-radius: 15px;
 }
 
 .card img {
@@ -74,6 +58,28 @@ body {
     height: 100%;
     object-fit: cover;
     transition: filter 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+/* Hover Effect - Temporary Gradient Overlay */
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 153, 0, 0.5), rgba(255, 255, 255, 0.5), rgba(0, 153, 0, 0.5));
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.card:hover::before {
+    opacity: 1;
+}
+
+.card:hover {
+    transform: scale(1.05);
 }
 
 .card.blur img {
