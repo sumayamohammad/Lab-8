@@ -64,15 +64,15 @@ body {
 }
 
 .card.blur img {
-    filter: blur(8px);
+    filter: blur(5px);
 }
 
 .card.invert img {
-    filter: invert(100%);
+    filter: invert(80%);
 }
 
 .card.gradient img {
-    filter: brightness(60%) contrast(120%) saturate(140%);
+    filter: brightness(80%) contrast(120%) saturate(110%);
 }
 
 .caption {
@@ -100,15 +100,7 @@ body {
     padding: 20px;
     background: linear-gradient(to right, white, green);
     margin-top: 20px;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: bold;
-}
-
-.contact a {
-    text-decoration: none;
     color: black;
-}
-
-.contact a:hover {
-    color: green;
 }
